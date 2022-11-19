@@ -1,36 +1,33 @@
 import React from "react";
-// import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
-// import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
-// import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
-// import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import devtoolstech from "../assets/devtoolstech.jpg";
+import flybondi from "../assets/flybondi.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: reactWeather,
+      src: flybondi,
+      demohref: `https://fly-bondi-challenge.vercel.app/`,
+      repohref: `https://github.com/FranDorne/flyBondi_Challenge`,
     },
     {
       id: 2,
-      src: reactWeather,
+      src: devtoolstech,
+      demohref: `https://devtoolstech-challenge.vercel.app/`,
+      repohref: `https://github.com/FranDorne/devtoolstech-challenge`,
     },
-    {
-      id: 3,
-      src: reactWeather,
-    },
-    {
-      id: 4,
-      src: reactWeather,
-    },
-    {
-      id: 5,
-      src: reactWeather,
-    },
-    {
-      id: 6,
-      src: reactWeather,
-    },
+    // {
+    //   id: 3,
+    // },
+    // {
+    //   id: 4,
+    // },
+    // {
+    //   id: 5,
+    // },
+    // {
+    //   id: 6,
+    // },
   ];
   return (
     <div
@@ -46,7 +43,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-        {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, demohref, repohref }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -54,15 +51,19 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
+                <a href={demohref} target="_blank" rel="noreferrer">
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    Demo
+                  </button>
+                </a>
+                <a href={repohref} target="_blank" rel="noreferrer">
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    Code
+                  </button>
+                </a>
               </div>
             </div>
-        ))}
+          ))}
         </div>
       </div>
     </div>
