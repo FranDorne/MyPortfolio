@@ -1,6 +1,7 @@
 import React from "react";
 import devtoolstech from "../assets/devtoolstech.jpg";
-import flybondi from "../assets/flybondi.png";
+import flybondi from "../assets/flybondi.jpg";
+import netflix from "../assets/netflix.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -16,9 +17,12 @@ const Portfolio = () => {
       demohref: `https://devtoolstech-challenge.vercel.app/`,
       repohref: `https://github.com/FranDorne/devtoolstech-challenge`,
     },
-    // {
-    //   id: 3,
-    // },
+    {
+      id: 3,
+      src: netflix,
+      demohref: `https://netflix-clone-3bde2.web.app/`,
+      repohref: `https://github.com/FranDorne/netflix-clone`,
+    },
     // {
     //   id: 4,
     // },
