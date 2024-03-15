@@ -2,6 +2,7 @@ import React from "react";
 import devtoolstech from "../assets/devtoolstech.jpg";
 import flybondi from "../assets/flybondi.jpg";
 import netflix from "../assets/netflix.jpg";
+import todoapp from "../assets/todoapp.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -23,20 +24,17 @@ const Portfolio = () => {
       demohref: `https://netflix-clone-3bde2.web.app/`,
       repohref: `https://github.com/FranDorne/netflix-clone`,
     },
-    // {
-    //   id: 4,
-    // },
-    // {
-    //   id: 5,
-    // },
-    // {
-    //   id: 6,
-    // },
+    {
+      id: 4,
+      src: todoapp,
+      demohref: `https://to-do-app-sigma-three.vercel.app/todo`,
+      repohref: `https://github.com/FranDorne/ToDoApp`,
+    },
   ];
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
