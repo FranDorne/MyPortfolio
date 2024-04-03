@@ -9,6 +9,9 @@ import figma from "../assets/figma.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import node from "../assets/node.png";
+import nestjs from "../assets/nestjs.png";
+import mui from "../assets/materialui.png";
+import aws from "../assets/aws.png";
 
 const Experience = () => {
   const techs = [
@@ -38,22 +41,23 @@ const Experience = () => {
     },
     {
       id: 5,
-      src: tailwind,
-      title: "Tailwind",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 6,
       src: typescript,
       title: "TypeScript",
       style: "shadow-blue-800",
     },
     {
-      id: 7,
-      src: node,
-      title: "Node JS",
-      style: "shadow-green-400",
+      id: 6,
+      src: tailwind,
+      title: "Tailwind",
+      style: "shadow-sky-400",
     },
+    {
+      id: 7,
+      src: mui,
+      title: "Material UI",
+      style: "shadow-blue-400",
+    },
+    
     {
       id: 8,
       src: figma,
@@ -66,6 +70,25 @@ const Experience = () => {
       title: "GitHub",
       style: "shadow-gray-400",
     },
+    {
+      id: 10,
+      src: node,
+      title: "Node JS",
+      style: "shadow-green-400",
+    },
+    {
+      id: 11,
+      src: nestjs,
+      title: "Nest JS",
+      style: "shadow-red-400",
+    },
+    {
+      id: 12,
+      src: aws,
+      title: "AWS",
+      style: "shadow-yellow-500",
+    },
+    
   ];
   return (
     <div

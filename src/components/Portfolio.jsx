@@ -3,6 +3,7 @@ import devtoolstech from "../assets/devtoolstech.jpg";
 import flybondi from "../assets/flybondi.jpg";
 import netflix from "../assets/netflix.jpg";
 import todoapp from "../assets/todoapp.jpg";
+import taskapp from "../assets/taskapp.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -29,6 +30,12 @@ const Portfolio = () => {
       src: todoapp,
       demohref: `https://to-do-app-sigma-three.vercel.app/todo`,
       repohref: `https://github.com/FranDorne/ToDoApp`,
+    },
+    {
+      id: 5,
+      src: taskapp,
+      demohref: `https://taskfront-production-3a6b.up.railway.app/`,
+      repohref: `https://github.com/FranDorne/taskfront`,
     },
   ];
   return (
