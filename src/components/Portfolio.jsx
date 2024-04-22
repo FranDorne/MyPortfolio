@@ -4,6 +4,7 @@ import flybondi from "../assets/flybondi.jpg";
 import netflix from "../assets/netflix.jpg";
 import todoapp from "../assets/todoapp.jpg";
 import taskapp from "../assets/taskapp.jpg";
+import imdbclone from "../assets/imdb-clone.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -36,6 +37,12 @@ const Portfolio = () => {
       src: taskapp,
       demohref: `https://taskfront-production-3a6b.up.railway.app/`,
       repohref: `https://github.com/FranDorne/taskfront`,
+    },
+    {
+      id: 6,
+      src: imdbclone,
+      demohref: `https://imdb-clone-85e906071-frandornes-projects.vercel.app/`,
+      repohref: `https://github.com/FranDorne/imdb-clone-app`,
     },
   ];
   return (
